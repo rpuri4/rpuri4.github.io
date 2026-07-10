@@ -95,11 +95,11 @@
             </div>
             <p class="period">May — Aug 2025</p>
             <p class="description">
-              Built a Python service for classifying web traffic events. Worked on
-              Snowflake data pipelines and added tracing around model latency,
-              token usage, and failure cases.
+              Built a Python service for classifying web traffic events using page
+              content and category retrieval. Worked on Snowflake data pipelines
+              and added tracing around model latency, token usage, and failures.
             </p>
-            <div class="chips"><span>Python</span><span>Snowflake</span><span>OpenTelemetry</span></div>
+            <div class="chips"><span>Python</span><span>Snowflake</span><span>RAG</span><span>OpenTelemetry</span></div>
           </article>
 
           <article>
@@ -110,10 +110,10 @@
             <p class="period">Jun — Aug 2024</p>
             <p class="description">
               Worked on a layer for checking SQL queries before they ran on
-              PostgreSQL. Parsed generated queries, added tenant checks, and used
-              query plans to reject unsafe or expensive queries.
+              PostgreSQL. Parsed generated queries, added schema and tenant checks,
+              and used query plans to reject unsafe or expensive queries.
             </p>
-            <div class="chips"><span>PostgreSQL</span><span>Redis</span><span>AWS</span></div>
+            <div class="chips"><span>PostgreSQL</span><span>Redis</span><span>AWS ECS</span><span>GitHub Actions</span></div>
           </article>
         </div>
       </section>
@@ -130,10 +130,11 @@
             <h2>Distributed Log Storage Engine</h2>
             <p>
               A replicated log service built in C++. It uses Raft for leader
-              election and log replication, with append-only storage and compaction.
+              election and log replication, with append-only storage, compaction,
+              and tests for partitions and node failures.
             </p>
             <footer>
-              <span>C++ · Raft · Linux</span>
+              <span>C++ · Raft · Linux · GoogleTest</span>
               <strong>70K ops/sec</strong>
             </footer>
           </article>
@@ -146,7 +147,7 @@
               state, retries, and graceful recovery when workers restart.
             </p>
             <footer>
-              <span>Go · Redis · gRPC</span>
+              <span>Go · Redis · gRPC · Kubernetes</span>
               <strong>Reliable execution</strong>
             </footer>
           </article>
