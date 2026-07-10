@@ -63,7 +63,7 @@ header {
 
 .brand {
   font-family: "DM Mono", monospace;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: -0.02em;
 }
@@ -75,7 +75,7 @@ nav {
   align-items: center;
   gap: 8px;
   font-family: "DM Mono", monospace;
-  font-size: 10px;
+  font-size: 12px;
   text-transform: uppercase;
 }
 
@@ -105,12 +105,12 @@ nav a:hover {
 .section-head,
 .intro aside span,
 .period,
-.chips,
 .project-id,
 .project-grid footer,
 .site-footer {
   font-family: "DM Mono", monospace;
-  font-size: 10px;
+  font-size: 12px;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -161,7 +161,7 @@ h1 {
   max-width: 640px;
   margin: 0;
   color: #4e4a43;
-  font-size: clamp(17px, 1.6vw, 21px);
+  font-size: clamp(18px, 1.7vw, 22px);
   line-height: 1.68;
 }
 
@@ -173,7 +173,7 @@ h1 {
   margin-top: auto;
   padding-top: 54px;
   font-family: "DM Mono", monospace;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .actions a {
@@ -220,12 +220,15 @@ h1 {
 }
 
 .intro aside div:last-child { border-bottom: 0; }
-.intro aside span { color: var(--faint); }
+.intro aside span {
+  color: var(--muted);
+  font-weight: 500;
+}
 
 .intro aside p {
-  margin: 8px 0 0;
-  font-size: 13px;
-  line-height: 1.55;
+  margin: 9px 0 0;
+  font-size: 15px;
+  line-height: 1.58;
 }
 
 .content-section {
@@ -260,8 +263,8 @@ h1 {
 .about-copy p {
   margin: 0;
   color: #49453e;
-  font-size: clamp(16px, 1.35vw, 18px);
-  line-height: 1.78;
+  font-size: clamp(17px, 1.45vw, 19px);
+  line-height: 1.75;
 }
 
 .experience-list {
@@ -295,7 +298,7 @@ h1 {
 .company span {
   color: var(--accent);
   font-family: "DM Mono", monospace;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.5;
   text-transform: uppercase;
 }
@@ -308,8 +311,8 @@ h1 {
 .description {
   margin: 0;
   color: #4d4942;
-  font-size: 14px;
-  line-height: 1.78;
+  font-size: 16px;
+  line-height: 1.7;
 }
 
 .chips {
@@ -317,6 +320,10 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  font-family: "DM Mono", monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .chips span {
@@ -376,8 +383,8 @@ h1 {
 .project-grid article > p {
   margin: 0;
   color: #57534b;
-  font-size: 14px;
-  line-height: 1.72;
+  font-size: 16px;
+  line-height: 1.65;
 }
 
 .project-grid footer {
@@ -469,8 +476,8 @@ h1 {
   header { min-height: 66px; }
   nav { gap: 2px; }
   nav a {
-    padding: 8px 7px;
-    font-size: 9px;
+    padding: 8px 6px;
+    font-size: 11px;
   }
 
   .intro {
@@ -479,7 +486,7 @@ h1 {
 
   h1 {
     margin-top: 26px;
-    font-size: clamp(45px, 14vw, 66px);
+    font-size: clamp(43px, 13.5vw, 64px);
   }
 
   .actions {
