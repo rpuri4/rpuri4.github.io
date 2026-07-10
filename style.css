@@ -41,7 +41,6 @@ button { font: inherit; }
   mask-image: linear-gradient(to bottom, black, transparent 70%);
 }
 
-header,
 main,
 .site-footer {
   width: min(100% - 48px, 1120px);
@@ -55,7 +54,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   min-height: 76px;
+  margin-inline: 0;
+  padding-inline: max(24px, calc((100% - 1120px) / 2));
   border-bottom: 1px solid rgba(25, 24, 21, 0.1);
   background: rgba(247, 244, 237, 0.82);
   backdrop-filter: blur(18px);
@@ -467,13 +469,15 @@ h1 {
 }
 
 @media (max-width: 600px) {
-  header,
   main,
   .site-footer {
     width: min(100% - 34px, 1120px);
   }
 
-  header { min-height: 66px; }
+  header {
+    min-height: 66px;
+    padding-inline: 17px;
+  }
   nav { gap: 2px; }
   nav a {
     padding: 8px 6px;
