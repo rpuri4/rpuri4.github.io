@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=20260710-header" />
   </head>
   <body>
     <div class="page-grid" aria-hidden="true"></div>
@@ -18,8 +18,8 @@
       <a class="brand" href="#top">RP<span>/</span></a>
       <nav aria-label="Main navigation">
         <a href="#about">About</a>
-        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
         <a href="mailto:rianpuri01@gmail.com">Contact</a>
       </nav>
     </header>
@@ -81,46 +81,9 @@
         </div>
       </section>
 
-      <section id="experience" class="content-section">
-        <div class="section-head">
-          <p><span>02</span> Experience</p>
-          <p>Internships</p>
-        </div>
-
-        <div class="experience-list">
-          <article>
-            <div class="company">
-              <p>Delivr AI</p>
-              <span>Software Engineering Intern</span>
-            </div>
-            <p class="period">May — Aug 2025</p>
-            <p class="description">
-              Built a Python service for classifying web traffic events using page
-              content and category retrieval. Worked on Snowflake data pipelines
-              and added tracing around model latency, token usage, and failures.
-            </p>
-            <div class="chips"><span>Python</span><span>Snowflake</span><span>RAG</span><span>OpenTelemetry</span></div>
-          </article>
-
-          <article>
-            <div class="company">
-              <p>RecVue</p>
-              <span>Software Engineering Intern</span>
-            </div>
-            <p class="period">Jun — Aug 2024</p>
-            <p class="description">
-              Worked on a layer for checking SQL queries before they ran on
-              PostgreSQL. Parsed generated queries, added schema and tenant checks,
-              and used query plans to reject unsafe or expensive queries.
-            </p>
-            <div class="chips"><span>PostgreSQL</span><span>Redis</span><span>AWS ECS</span><span>GitHub Actions</span></div>
-          </article>
-        </div>
-      </section>
-
       <section id="projects" class="content-section">
         <div class="section-head">
-          <p><span>03</span> Projects</p>
+          <p><span>02</span> Projects</p>
           <p>A few things I’ve built</p>
         </div>
 
@@ -168,6 +131,43 @@
               <span>Go · Redis · gRPC · Kubernetes</span>
               <strong>8K tasks/sec · zero task loss</strong>
             </footer>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="content-section">
+        <div class="section-head">
+          <p><span>03</span> Experience</p>
+          <p>Internships</p>
+        </div>
+
+        <div class="experience-list">
+          <article>
+            <div class="company">
+              <p>Delivr AI</p>
+              <span>Software Engineering Intern</span>
+            </div>
+            <p class="period">May — Aug 2025</p>
+            <p class="description">
+              Built a Python service for classifying web traffic events using page
+              content and category retrieval. Worked on Snowflake data pipelines
+              and added tracing around model latency, token usage, and failures.
+            </p>
+            <div class="chips"><span>Python</span><span>Snowflake</span><span>RAG</span><span>OpenTelemetry</span></div>
+          </article>
+
+          <article>
+            <div class="company">
+              <p>RecVue</p>
+              <span>Software Engineering Intern</span>
+            </div>
+            <p class="period">Jun — Aug 2024</p>
+            <p class="description">
+              Worked on a layer for checking SQL queries before they ran on
+              PostgreSQL. Parsed generated queries, added schema and tenant checks,
+              and used query plans to reject unsafe or expensive queries.
+            </p>
+            <div class="chips"><span>PostgreSQL</span><span>Redis</span><span>AWS ECS</span><span>GitHub Actions</span></div>
           </article>
         </div>
       </section>

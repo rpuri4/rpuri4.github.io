@@ -54,12 +54,22 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: min(100% - 48px, 1120px);
   min-height: 76px;
-  margin-inline: 0;
-  padding-inline: max(24px, calc((100% - 1120px) / 2));
+  margin-inline: auto;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
   border-bottom: 1px solid rgba(25, 24, 21, 0.1);
-  background: rgba(247, 244, 237, 0.82);
+  background: rgba(247, 244, 237, 0.9);
   backdrop-filter: blur(18px);
 }
 
@@ -469,15 +479,13 @@ h1 {
 }
 
 @media (max-width: 600px) {
+  header,
   main,
   .site-footer {
     width: min(100% - 34px, 1120px);
   }
 
-  header {
-    min-height: 66px;
-    padding-inline: 17px;
-  }
+  header { min-height: 66px; }
   nav { gap: 2px; }
   nav a {
     padding: 8px 6px;
