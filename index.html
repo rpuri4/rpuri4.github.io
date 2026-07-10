@@ -129,39 +129,44 @@
             <span class="project-id">P/01</span>
             <h2>Distributed Log Storage Engine</h2>
             <p>
-              A replicated log service built in C++. It uses Raft for leader
-              election and log replication, with append-only storage, compaction,
-              and tests for partitions and node failures.
+              A fault-tolerant replicated log service in C++ implementing Raft
+              leader election and log replication. It uses append-only storage,
+              segment compaction, batched I/O, and integration tests for partitions,
+              leader changes, and node failures.
             </p>
             <footer>
-              <span>C++ · Raft · Linux · GoogleTest</span>
-              <strong>70K ops/sec</strong>
+              <span>C++ · Raft · Distributed Systems · Linux · GoogleTest</span>
+              <strong>70K ops/sec · sub-3ms median</strong>
             </footer>
           </article>
 
           <article>
             <span class="project-id">P/02</span>
-            <h2>Concurrent Task Orchestrator</h2>
+            <h2>Agent Evaluation Harness</h2>
             <p>
-              A task execution system in Go with workers, scheduling, Redis-backed
-              state, retries, and graceful recovery when workers restart.
+              A tool-calling LLM agent over 3 custom MCP servers for SQL guardrails,
+              web retrieval, and file operations. The harness validates tool inputs,
+              scores a 40-task eval set with LLM-as-judge, and traces tool calls,
+              token usage, retries, and failures with OpenTelemetry across 200 runs.
             </p>
             <footer>
-              <span>Go · Redis · gRPC · Kubernetes</span>
-              <strong>Reliable execution</strong>
+              <span>Python · LangGraph · MCP · OpenTelemetry</span>
+              <strong>LLM evals</strong>
             </footer>
           </article>
 
           <article>
             <span class="project-id">P/03</span>
-            <h2>LSM-Tree Storage Engine</h2>
+            <h2>Concurrent Task Orchestrator</h2>
             <p>
-              A storage engine in C++ with memtables, SSTables, a write-ahead log,
-              bloom filters, and background compaction.
+              A Go-based distributed scheduler with Redis-backed state, concurrent
+              workers, retry queues, idempotent execution, bounded work queues,
+              and backpressure. Tested against worker crashes and restarts to avoid
+              task loss while sustaining 8K tasks/sec under fault injection.
             </p>
             <footer>
-              <span>C++ · File I/O · Linux</span>
-              <strong>50K+ inserts/sec</strong>
+              <span>Go · Redis · gRPC · Kubernetes</span>
+              <strong>8K tasks/sec · zero task loss</strong>
             </footer>
           </article>
         </div>
