@@ -3,19 +3,34 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#123f40">
+        <meta name="theme-color" content="#211b16">
         <meta name="description" content="Rian Puri — software engineer and UC Berkeley EECS graduate interested in backend systems, infrastructure, and machine learning.">
         <title>About Rian Puri</title>
-        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" type="text/css" href="desktop.css?v=10"/>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="contact.css">
+        <script src="contact.js?v=4" defer></script>
+        <script src="desktop.js?v=11" defer></script>
     </head>
     <body>
         <a class="skip-link" href="#main">Skip to content</a>
-        <div class="page">
-        <header id="sidebar">
+
+        <nav class="desktop-icons" aria-label="Desktop files">
+            <button class="desktop-icon" type="button" data-open="about-window" aria-controls="about-window">
+                <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 5h17l9 9v29H12z"/><path d="M29 5v10h9M18 23h14M18 29h14M18 35h10"/></svg>
+                <span>about_rian.txt</span>
+            </button>
+            <button class="desktop-icon" type="button" data-open="projects-window" aria-controls="projects-window">
+                <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M5 12h15l5 6h18v23H5z"/><path d="M5 22h38"/></svg>
+                <span>projects</span>
+            </button>
+        </nav>
+        <main class="desktop-layout" id="main">
+            <div class="desktop-window about-window closed" inert id="about-window" data-title="About">
+<div class="window-bar" tabindex="0" role="group" aria-label="Move window with arrow keys; Home resets position"><span>■ &nbsp; about_rian.txt</span><div class="window-controls"><button class="minimize-window" type="button" aria-label="Minimize About" title="Minimize">−</button><button class="maximize-window" type="button" disabled aria-label="Maximize About" aria-pressed="false" title="Maximize unavailable">□</button><button class="close-window" type="button" aria-label="Close About" title="Close">×</button></div></div><div class="window-content">        <header id="sidebar">
             <pre id="logo" role="img" aria-label="Rian Puri">█▀█ █ ▄▀█ █▄ █
 █▀▄ █ █▀█ █ ▀█</pre>
             <p class="role">software engineer</p>
@@ -26,33 +41,33 @@
             </nav>
         </header>
 
-        <main class="info-panel" id="main">
-            <section>
+<div class="info-panel">            <section>
                 <h1><span class="section-number" aria-hidden="true">01 /</span> ABOUT ME</h1>
                 <p>I'm Rian, a software engineer and UC Berkeley EECS grad. I'm interested in backend systems, infrastructure, and machine learning.</p>
-            </section>
-
-            <section>
+            </section></div></div>
+            </div>
+            <div class="desktop-window projects-window closed" inert id="projects-window" data-title="Projects">
+<div class="window-bar" tabindex="0" role="group" aria-label="Move window with arrow keys; Home resets position"><span>■ &nbsp; projects/</span><div class="window-controls"><button class="minimize-window" type="button" aria-label="Minimize Projects" title="Minimize">−</button><button class="maximize-window" type="button" disabled aria-label="Maximize Projects" aria-pressed="false" title="Maximize unavailable">□</button><button class="close-window" type="button" aria-label="Close Projects" title="Close">×</button></div></div><div class="window-content info-panel">            <section>
                 <h2><span class="section-number" aria-hidden="true">02 /</span> WHAT I'VE BEEN BUILDING</h2>
 
-                <article>
+                <article class="file-entry">
                     <h3>Distributed Log Storage Engine</h3>
                     <p>A replicated log built in C++ using Raft to keep data consistent across machines. I worked on how nodes agree on writes, store them efficiently, and recover when a node fails.</p>
                 </article>
 
-                <article>
+                <article class="file-entry">
                     <h3>Agent Evaluation Harness</h3>
                     <p>A Python toolkit for testing whether LLM agents complete tasks and use their tools correctly. It captures traces of each run to help pinpoint failures and understand where time is spent.</p>
                 </article>
 
-                <article>
+                <article class="file-entry">
                     <h3>Concurrent Task Orchestrator</h3>
                     <p>A distributed task scheduler in Go that coordinates work across multiple workers. It handles retries, worker crashes, and backpressure so jobs keep moving under load.</p>
                 </article>
-            </section>
-            <footer><span aria-hidden="true">[</span> thanks for stopping by <span aria-hidden="true">]</span></footer>
+            </section></div>
+            </div>
         </main>
-        </div>
-
+        <footer class="desktop-footer">[ thanks for stopping by ]</footer>
+        <nav class="taskbar" aria-label="Minimized windows" hidden><span class="taskbar-label">DESKTOP</span><div class="taskbar-tabs"></div></nav>
     </body>
 </html>

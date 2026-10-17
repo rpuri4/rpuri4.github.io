@@ -1,0 +1,5 @@
+.copy-email { font:11px/1.5 "Courier New",monospace; background:none; border:1px dashed var(--line); color:var(--muted); padding:5px 9px; cursor:pointer; margin-top:12px; }
+.copy-email:hover { color:var(--accent);border-color:var(--accent); }
+.copy-email:focus-visible {outline:2px dashed var(--accent);outline-offset:3px;}
+#sidebar > .copy-email {grid-column:1 / -1;justify-self:start;}
+.copy-status {position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);}
