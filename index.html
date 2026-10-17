@@ -1,185 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Rian Puri — about, experience, and projects." />
-    <meta name="theme-color" content="#f5f4ef" />
-    <title>Rian Puri</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css?v=20260710-header" />
-  </head>
-  <body>
-    <div class="page-grid" aria-hidden="true"></div>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#123f40">
+        <meta name="description" content="Rian Puri — software engineer and UC Berkeley EECS graduate interested in backend systems, infrastructure, and machine learning.">
+        <title>About Rian Puri</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+    </head>
+    <body>
+        <a class="skip-link" href="#main">Skip to content</a>
+        <div class="page">
+        <header id="sidebar">
+            <pre id="logo" role="img" aria-label="Rian Puri">█▀█ █ ▄▀█ █▄ █
+█▀▄ █ █▀█ █ ▀█</pre>
+            <p class="role">software engineer</p>
+            <nav aria-label="Contact links">
+                <a href="mailto:rianpuri01@gmail.com">email <span aria-hidden="true">↗</span></a>
+                <a href="https://www.linkedin.com/in/rianpuri/" target="_blank" rel="noopener noreferrer">linkedin <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/rianpuri" target="_blank" rel="noopener noreferrer">github <span aria-hidden="true">↗</span></a>
+            </nav>
+        </header>
 
-    <header>
-      <a class="brand" href="#top">RP<span>/</span></a>
-      <nav aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="mailto:rianpuri01@gmail.com">Contact</a>
-      </nav>
-    </header>
+        <main class="info-panel" id="main">
+            <section>
+                <h1><span class="section-number" aria-hidden="true">01 /</span> ABOUT ME</h1>
+                <p>I'm Rian, a software engineer and UC Berkeley EECS grad. I'm interested in backend systems, infrastructure, and machine learning.</p>
+            </section>
 
-    <main id="top">
-      <section class="intro">
-        <div class="intro-label">
-          <span class="status"></span>
-          UC Berkeley EECS
+            <section>
+                <h2><span class="section-number" aria-hidden="true">02 /</span> WHAT I'VE BEEN BUILDING</h2>
+
+                <article>
+                    <h3>Distributed Log Storage Engine</h3>
+                    <p>A replicated log built in C++ using Raft to keep data consistent across machines. I worked on how nodes agree on writes, store them efficiently, and recover when a node fails.</p>
+                </article>
+
+                <article>
+                    <h3>Agent Evaluation Harness</h3>
+                    <p>A Python toolkit for testing whether LLM agents complete tasks and use their tools correctly. It captures traces of each run to help pinpoint failures and understand where time is spent.</p>
+                </article>
+
+                <article>
+                    <h3>Concurrent Task Orchestrator</h3>
+                    <p>A distributed task scheduler in Go that coordinates work across multiple workers. It handles retries, worker crashes, and backpressure so jobs keep moving under load.</p>
+                </article>
+            </section>
+            <footer><span aria-hidden="true">[</span> thanks for stopping by <span aria-hidden="true">]</span></footer>
+        </main>
         </div>
 
-        <div class="intro-main">
-          <p class="overline">Rian Puri</p>
-          <h1>About me, my work, and projects.</h1>
-          <p class="abstract">
-            I’m an EECS student at UC Berkeley. I like building software, learning
-            how systems work, and working on projects that make me understand the
-            details better.
-          </p>
-          <div class="actions">
-            <a class="button" href="mailto:rianpuri01@gmail.com">Email me ↗</a>
-            <a href="https://github.com/rpuri4" target="_blank" rel="noreferrer">GitHub ↗</a>
-            <a href="https://linkedin.com/in/rianpuri" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-          </div>
-        </div>
-
-        <aside>
-          <div>
-            <span>Based in</span>
-            <p>Berkeley, California</p>
-          </div>
-          <div>
-            <span>Education</span>
-            <p>UC Berkeley EECS<br />Honors · 3.7 GPA</p>
-          </div>
-          <div>
-            <span>Contact</span>
-            <p>rianpuri01<br />@gmail.com</p>
-          </div>
-        </aside>
-      </section>
-
-      <section id="about" class="content-section about-section">
-        <div class="section-head">
-          <p><span>01</span> About</p>
-          <p>Short version</p>
-        </div>
-
-        <div class="about-copy">
-          <p>
-            I’m studying Electrical Engineering and Computer Science at UC Berkeley.
-            I’ve spent most of my time building backend services, data tools, and
-            systems projects.
-          </p>
-          <p>
-            Outside of class, I like making things from scratch so I can understand
-            what is actually happening underneath the interface.
-          </p>
-        </div>
-      </section>
-
-      <section id="projects" class="content-section">
-        <div class="section-head">
-          <p><span>02</span> Projects</p>
-          <p>A few things I’ve built</p>
-        </div>
-
-        <div class="project-grid">
-          <article>
-            <span class="project-id">P/01</span>
-            <h2>Distributed Log Storage Engine</h2>
-            <p>
-              A fault-tolerant replicated log service in C++ implementing Raft
-              leader election and log replication. It uses append-only storage,
-              segment compaction, batched I/O, and integration tests for partitions,
-              leader changes, and node failures.
-            </p>
-            <footer>
-              <span>C++ · Raft · Distributed Systems · Linux · GoogleTest</span>
-              <strong>70K ops/sec · sub-3ms median</strong>
-            </footer>
-          </article>
-
-          <article>
-            <span class="project-id">P/02</span>
-            <h2>Agent Evaluation Harness</h2>
-            <p>
-              A tool-calling LLM agent over 3 custom MCP servers for SQL guardrails,
-              web retrieval, and file operations. The harness validates tool inputs,
-              scores a 40-task eval set with LLM-as-judge, and traces tool calls,
-              token usage, retries, and failures with OpenTelemetry across 200 runs.
-            </p>
-            <footer>
-              <span>Python · LangGraph · MCP · OpenTelemetry</span>
-              <strong>LLM evals</strong>
-            </footer>
-          </article>
-
-          <article>
-            <span class="project-id">P/03</span>
-            <h2>Concurrent Task Orchestrator</h2>
-            <p>
-              A Go-based distributed scheduler with Redis-backed state, concurrent
-              workers, retry queues, idempotent execution, bounded work queues,
-              and backpressure. Tested against worker crashes and restarts to avoid
-              task loss while sustaining 8K tasks/sec under fault injection.
-            </p>
-            <footer>
-              <span>Go · Redis · gRPC · Kubernetes</span>
-              <strong>8K tasks/sec · zero task loss</strong>
-            </footer>
-          </article>
-        </div>
-      </section>
-
-      <section id="experience" class="content-section">
-        <div class="section-head">
-          <p><span>03</span> Experience</p>
-          <p>Internships</p>
-        </div>
-
-        <div class="experience-list">
-          <article>
-            <div class="company">
-              <p>Delivr AI</p>
-              <span>Software Engineering Intern</span>
-            </div>
-            <p class="period">May — Aug 2025</p>
-            <p class="description">
-              Built a Python service for classifying web traffic events using page
-              content and category retrieval. Worked on Snowflake data pipelines
-              and added tracing around model latency, token usage, and failures.
-            </p>
-            <div class="chips"><span>Python</span><span>Snowflake</span><span>RAG</span><span>OpenTelemetry</span></div>
-          </article>
-
-          <article>
-            <div class="company">
-              <p>RecVue</p>
-              <span>Software Engineering Intern</span>
-            </div>
-            <p class="period">Jun — Aug 2024</p>
-            <p class="description">
-              Worked on a layer for checking SQL queries before they ran on
-              PostgreSQL. Parsed generated queries, added schema and tenant checks,
-              and used query plans to reject unsafe or expensive queries.
-            </p>
-            <div class="chips"><span>PostgreSQL</span><span>Redis</span><span>AWS ECS</span><span>GitHub Actions</span></div>
-          </article>
-        </div>
-      </section>
-
-    </main>
-
-    <div class="site-footer">
-      <p>Rian Puri · <span id="year"></span></p>
-      <p>Berkeley, California</p>
-      <button type="button" id="top-button">Back to top ↑</button>
-    </div>
-
-    <script src="script.js"></script>
-  </body>
+    </body>
 </html>
